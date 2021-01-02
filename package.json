@@ -1,11 +1,24 @@
 {
   "name": "amazon-price-monitor-azure-function",
   "version": "1.0.0",
-  "description": "",
+  "description": "An Azure javascript function app to monitor price chnages of products in amazon.in and send a mail if the price of product matches target price.",
   "scripts": {
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anilrv/amazon-price-monitor-azure-function.git"
+  },
+  "keywords": [
+    "miio"
+  ],
+  "author": "ANiL",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/anilrv/amazon-price-monitor-azure-function/issues"
+  },
+  "homepage": "https://github.com/anilrv/amazon-price-monitor-azure-function#readme",
   "dependencies": {},
   "devDependencies": {}
 }
