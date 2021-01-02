@@ -1,0 +1,32 @@
+﻿{
+  "bindings": [
+    {
+      "name": "ThreeHrTimer",
+      "schedule": "0 0 */3 * * *",
+      "direction": "in",
+      "type": "timerTrigger"
+    },
+    {
+      "name": "outputTable",
+      "direction": "out",
+      "type": "table",
+      "tableName": "AmazonPriceCheck",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "outputQueue",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "amazon-price-drop-mails",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "inputTable",
+      "direction": "in",
+      "type": "table",
+      "tableName": "AmazonPriceCheck",
+      "take": 50,
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}

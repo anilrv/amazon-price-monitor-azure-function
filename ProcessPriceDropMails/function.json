@@ -1,0 +1,19 @@
+﻿{
+  "bindings": [
+    {
+      "name": "mailOrders",
+      "queueName": "amazon-price-drop-mails",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in",
+      "type": "queueTrigger"
+    },
+    {
+      "type": "sendGrid",
+      "name": "message",
+      "direction": "out",
+      "apiKey": "SendgridAPIKey",
+      "from": "admin@anilrv.in",
+      "to": "Anil <contact@anilrv.in>"
+    }
+  ]
+}
